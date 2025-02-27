@@ -1,6 +1,6 @@
 import React from "react";
 
-const CreateComponent = ({ info = {} }) => {
+const CreateComponent = ({ info, current_component }) => {
   let html = "";
 
   if (info.name === "main_frame") {

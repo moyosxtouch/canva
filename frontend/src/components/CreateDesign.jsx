@@ -6,6 +6,7 @@ const CreateDesign = () => {
   const ref = useRef();
   const { state } = useLocation();
   console.log(state);
+
   const obj = {
     name: "main_frame",
     type: "rect",
@@ -16,6 +17,7 @@ const CreateDesign = () => {
     color: "green",
     image: "",
   };
+
   return (
     <div className="w-screen h-screen flex justify-center items-center relative">
       <div ref={ref} className="relative w-auto h-auto overflow-auto">
@@ -24,5 +26,4 @@ const CreateDesign = () => {
     </div>
   );
 };
-
 export default CreateDesign;
