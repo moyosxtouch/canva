@@ -1,10 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Index from "./pages/index";
-
+import Index from "./pages/Index";
 import Layout from "./pages/Layout";
 import Home from "./components/Home";
 import Templates from "./components/Templates";
 import Projects from "./components/Projects";
+import CreateDesign from "./components/CreateDesign";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +25,12 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/design/create",
+    element: <CreateDesign />,
+  },
 ]);
+
 function App() {
   return <RouterProvider router={router} />;
 }
